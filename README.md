@@ -1,33 +1,41 @@
-# Essential JS2  React  sample with router and webpack.
+# Essential JS2 React sample with router and webpack
 
-In this sample we are using the webpack to compile the tsx file and generate a whole bundle which can be used in static html page.
+Repository Description: A React + webpack sample demonstrating how to compile TSX sources into a single bundle and use routing for a static HTML deployment.
 
-Please follow the below steps for using webpack compilation.
+## Project Overview
+
+This sample shows using webpack to compile TSX files (React) and produce a bundled output that can be served from a static HTML page. The project includes routing setup and a minimal dev server for local testing.
+
+## Features
+
+- Webpack-based TSX compilation
+- React router integration
+- Single-file bundle suitable for static hosting
 
 ## Prerequisites
 
-Install [Node.js and npm](https://nodejs.org/en/) (v6.6.0 or newer) if they are not already installed on your computer.
+Install Node.js and npm (v6.6.0 or newer). Verify versions with `node -v` and `npm -v`.
 
-> Verify that you are running at least node v6.x.x and npm 3.x.x by running `node -v` and `npm -v` in a terminal/console window. Older versions may produce errors.
+Install the referenced webpack version globally if needed:
 
- Install the webpack globally using the following command after node installation.
- 
-  ```
-  npm i -g webpack@2.6.1
-  ```
-
-## Steps to build it
-
-Use the following command to install the dependent npm packages from the command prompt.
-
+```bash
+npm i -g webpack@2.6.1
 ```
+
+## Install
+
+```bash
 npm install
 ```
 
-Run the application by using following command:
+## Run (development)
 
-```
+```bash
 npm start
 ```
 
-Open your browser and navigate to http://localhost:3000/ to view the application.
+Open http://localhost:3000/ in a browser to view the running sample.
+
+## How it works
+
+Webpack compiles the TSX sources into a single bundle referenced from `src/index.html`. The routing setup in the example demonstrates navigating between components while using the compiled bundle in a static page.
