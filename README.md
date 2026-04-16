@@ -28,18 +28,21 @@ npm -v
 If necessary, install the referenced Webpack version globally:
 ```bash
 npm i -g webpack@2.6.1
-``
+```
+
 Note that global installation is optional if Webpack is already included as a local dependency in the project.
 Install
 Install all required dependencies by running the following command in the root directory of the repository:
  
 ```bash
 npm install
-``
+```
+
 This will download and install all packages specified in the package.json file.
 Run (Development)
 To compile and run the application in development mode, use the following command:
 ```bash
 npm start
 ```
+
 The project will be built using Webpack and served locally. This setup allows developers to test changes and experiment with the configuration while exploring how routing and bundling work together in a React and TypeScript environment.
